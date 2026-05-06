@@ -30,7 +30,7 @@
                         </div>
                         <!-- /.card-header -->
 
-                        <form role="form" method="post" action="{{ route('categories.store') }}">
+                        <form role="form" method="post" action="{{ route('tags.store') }}">
                             @csrf
                             <div class="card-body">
                                 <div class="form-group">
