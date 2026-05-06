@@ -12,12 +12,12 @@ class Tag extends Model
     {
         return $this->hasMany(Post::class);
     }
-
+    protected $guarded = [];
     public function sluggable(): array
     {
         return [
-            'slug'=>[
-                'source'=>'title'
+            'slug' => [
+                'source' => 'title'
             ]
         ];
     }
